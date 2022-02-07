@@ -44,11 +44,34 @@ NUM_EPOCHS = 10
 model.fit(train_data, epochs=NUM_EPOCHS, validation_data=(validation_inputs, validation_targets), verbose=2)
 ```
 
+These are the results I got:
+
+```
+Epoch 1/10
+360/360 - 144s - loss: 0.2478 - accuracy: 0.9266 - val_loss: 0.1334 - val_accuracy: 0.9612 - 144s/epoch - 400ms/step
+Epoch 2/10
+360/360 - 132s - loss: 0.1079 - accuracy: 0.9703 - val_loss: 0.1331 - val_accuracy: 0.9643 - 132s/epoch - 367ms/step
+Epoch 3/10
+360/360 - 132s - loss: 0.0874 - accuracy: 0.9758 - val_loss: 0.0859 - val_accuracy: 0.9773 - 132s/epoch - 368ms/step
+Epoch 4/10
+360/360 - 131s - loss: 0.0673 - accuracy: 0.9817 - val_loss: 0.0798 - val_accuracy: 0.9763 - 131s/epoch - 363ms/step
+Epoch 5/10
+360/360 - 131s - loss: 0.0575 - accuracy: 0.9839 - val_loss: 0.0886 - val_accuracy: 0.9773 - 131s/epoch - 364ms/step
+Epoch 6/10
+360/360 - 131s - loss: 0.0527 - accuracy: 0.9859 - val_loss: 0.0605 - val_accuracy: 0.9825 - 131s/epoch - 363ms/step
+Epoch 7/10
+360/360 - 131s - loss: 0.0427 - accuracy: 0.9884 - val_loss: 0.0681 - val_accuracy: 0.9815 - 131s/epoch - 364ms/step
+Epoch 8/10
+360/360 - 131s - loss: 0.0361 - accuracy: 0.9903 - val_loss: 0.0659 - val_accuracy: 0.9855 - 131s/epoch - 364ms/step
+Epoch 9/10
+360/360 - 131s - loss: 0.0359 - accuracy: 0.9898 - val_loss: 0.0456 - val_accuracy: 0.9877 - 131s/epoch - 363ms/step
+Epoch 10/10
+360/360 - 131s - loss: 0.0315 - accuracy: 0.9914 - val_loss: 0.0421 - val_accuracy: 0.9898 - 131s/epoch - 363ms/step
+```
+
 #### Testing the model: 
 
 After ensuring that the accuracy of my model was increasing and the loss was decreasing, I ran the algorithm using the test data. 
-
-![image-for-MNIST]()
 
 ```python
 test_loss, test_accuracy = model.evaluate(test_data)
