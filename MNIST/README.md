@@ -87,6 +87,6 @@ For my second run, I decided to sacrifice a small amount of accuracy for efficie
 
 I will continue attempting to increase the accuracy of this model. Stay tuned.  
 
-If you are curious, check out the [full code here]()!
+If you are curious, check out the [full code here](https://github.com/hafsa-masood/Data-Science-Projects/blob/main/MNIST/MNIST-Machine-Learning-Project-Code)!
 
 
